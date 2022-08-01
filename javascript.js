@@ -69,16 +69,7 @@ for(i=1;i<5;i++){
        }
 }
 }
-// if we click on a answer box 
-    // if we are playing
-        //correct?
-        //yes?
-       // increase score by 1
-            //show correct box for 1 sec
-                //generate new Q&A
-        //no?
-            //show the incorrect box 1 sec
-//functions
+
 
 // start counter
 function startCountdown(){
@@ -114,8 +105,8 @@ function show(Id){
 function generateQA(){
     let x  = 1+ Math.round(11*Math.random());
     let y  = 1+ Math.round(11*Math.random());
-    correctAnswer = x+y;
-    document.getElementById("question").innerHTML = x + "+" + y;
+    correctAnswer = x*y;
+    document.getElementById("question").innerHTML = x + "x" + y;
     let correctPosition = 1+ Math.round(3*Math.random());
     document.getElementById("box"+correctPosition).innerHTML = correctAnswer;
     
